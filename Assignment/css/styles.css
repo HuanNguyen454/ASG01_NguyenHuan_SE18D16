@@ -1,0 +1,125 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+h1 {
+  color: #0e2452;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.personal-info-container {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+.personal-info {
+  width: calc(
+    100% - 153px
+  ); /* 153px là tổng kích thước của hình ảnh và margin-right */
+  margin-right: 20px; /* margin-right để tách hình ảnh với nội dung */
+  flex-shrink: 0; /* Ngăn chặn co lại của phần thông tin cá nhân */
+}
+.personal-info img {
+  max-width: 100%; /* Giới hạn chiều rộng tối đa của hình ảnh là 100% của phần tử chứa */
+  height: auto; /* Đảm bảo tỷ lệ khung hình được giữ nguyên */
+}
+.details {
+  width: 100%;
+  margin-top: 20px;
+}
+.section {
+  margin-bottom: 40px;
+  padding: 0 20px;
+  margin-inline: auto;
+  max-width: 90vw; /* Giới hạn chiều rộng tối đa của mỗi phần */
+  width: 100%; /* Đảm bảo mỗi phần chiếm toàn bộ chiều rộng */
+  box-sizing: border-box; /* Đảm bảo padding không làm tăng kích thước của phần tử */
+}
+.container .section1 {
+  display: flex;
+  justify-content: center;
+  max-width: 90vw;
+  width: 100%;
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
+.container .section1 .row{
+    flex: 1;
+}
+.section h2 {
+  border-bottom: 2px solid #0e2452;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  text-align: flex-start;
+}
+.timeline {
+  position: relative;
+  margin-bottom: 40px;
+}
+.timeline-event {
+  position: relative;
+  margin-bottom: 40px;
+}
+.event-content {
+  margin-bottom: 20px;
+}
+.event-date {
+  text-align: right;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  margin-bottom: 10px;
+}
+ol {
+  list-style-type: none;
+  padding: 0;
+}
+footer {
+  margin-top: 40px;
+  text-align: center;
+}
+.Avatar {
+  width: 100%;
+  height: 100%;
+}
+.personal-image{
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+    background-repeat: no-repeat;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+ul li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 10px;
+  height: 2px;
+  background-color: #000;
+  transform: translateY(-50%);
+}
